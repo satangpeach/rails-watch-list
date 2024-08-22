@@ -2,7 +2,7 @@
 
 <h2> Movies in this list:</h2>
 <ul>
-  <% bookmark.each do |bookmark| %>
+  <% @bookmarks.each do |bookmark| %>
     <li>
       <%= bookmark.movie.title %> - <%= bookmark.commment %>
       <%= link_to 'Delete', bookmark_path(bookmark), method: :delete, data: { confirm: 'Are you sure?' } %>
